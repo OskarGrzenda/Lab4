@@ -7,4 +7,30 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'data-binding-app';
+  count:number = 0;
+  hideLabel:boolean = true;
+
+
+  buttonPressed()
+  {
+    console.log("button pressed");
+    this.count++;
+  }
+
+  imageClicked()
+  {
+    console.log("Look at the star");
+    if  (this.hideLabel == true)
+    {
+      this.hideLabel = false;
+    }
+    else
+    {
+      this.hideLabel = true;
+    }
+    
+  }
+
+
+
 }
